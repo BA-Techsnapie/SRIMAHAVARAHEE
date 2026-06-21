@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #FF9933; /* saffron-500 */
+  --color-primary-50: #FFF7ED; /* saffron-50 */
+  --color-primary-100: #FFEDD5; /* saffron-100 */
+  --color-primary-200: #FED7AA; /* saffron-200 */
+  --color-primary-300: #FDBA74; /* saffron-300 */
+  --color-primary-400: #FB923C; /* saffron-400 */
+  --color-primary-500: #FF9933; /* saffron-500 */
+  --color-primary-600: #EA580C; /* saffron-600 */
+  --color-primary-700: #C2410C; /* saffron-700 */
+  --color-primary-800: #9A3412; /* saffron-800 */
+  --color-primary-900: #7C2D12; /* saffron-900 */
+
+  /* Secondary Colors */
+  --color-secondary: #800000; /* maroon-500 */
+  --color-secondary-50: #FDF2F2; /* maroon-50 */
+  --color-secondary-100: #FCE7E7; /* maroon-100 */
+  --color-secondary-200: #FECACA; /* maroon-200 */
+  --color-secondary-300: #FCA5A5; /* maroon-300 */
+  --color-secondary-400: #F87171; /* maroon-400 */
+  --color-secondary-500: #800000; /* maroon-500 */
+  --color-secondary-600: #DC2626; /* maroon-600 */
+  --color-secondary-700: #B91C1C; /* maroon-700 */
+  --color-secondary-800: #991B1B; /* maroon-800 */
+  --color-secondary-900: #7F1D1D; /* maroon-900 */
+
+  /* Accent Colors */
+  --color-accent: #FFD700; /* gold-500 */
+  --color-accent-50: #FFFBEB; /* gold-50 */
+  --color-accent-100: #FEF3C7; /* gold-100 */
+  --color-accent-200: #FDE68A; /* gold-200 */
+  --color-accent-300: #FCD34D; /* gold-300 */
+  --color-accent-400: #FBBF24; /* gold-400 */
+  --color-accent-500: #FFD700; /* gold-500 */
+  --color-accent-600: #D97706; /* gold-600 */
+  --color-accent-700: #B45309; /* gold-700 */
+  --color-accent-800: #92400E; /* gold-800 */
+  --color-accent-900: #78350F; /* gold-900 */
+
+  /* Background Colors */
+  --color-background: #FFFEF7; /* warm-white */
+  --color-surface: #FFF8DC; /* cream-100 */
+
+  /* Text Colors */
+  --color-text-primary: #2D1810; /* brown-900 */
+  --color-text-secondary: #6B4E3D; /* brown-600 */
+
+  /* Status Colors */
+  --color-success: #4F7942; /* green-700 */
+  --color-success-50: #F0FDF4; /* green-50 */
+  --color-success-100: #DCFCE7; /* green-100 */
+  --color-success-500: #4F7942; /* green-500 */
+
+  --color-warning: #D4851F; /* amber-600 */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-500: #D4851F; /* amber-500 */
+
+  --color-error: #B85450; /* red-600 */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-500: #B85450; /* red-500 */
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Crimson Text', serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-poppins font-medium transition-all duration-300 ease-out;
+    box-shadow: 0 4px 20px rgba(255, 153, 51, 0.1);
+  }
+
+  .btn-primary:hover {
+    @apply bg-primary-600;
+    box-shadow: 0 8px 40px rgba(255, 153, 51, 0.2);
+  }
+
+  .card {
+    @apply bg-surface rounded-lg p-6;
+    box-shadow: 0 4px 20px rgba(255, 153, 51, 0.1);
+  }
+
+  .sacred-text {
+    font-family: 'Cinzel', serif;
+  }
+
+  .gentle-shadow {
+    box-shadow: 0 4px 20px rgba(255, 153, 51, 0.1);
+  }
+
+  .deep-shadow {
+    box-shadow: 0 8px 40px rgba(128, 0, 0, 0.15);
+  }
+}
+
+@layer utilities {
+  .transition-gentle {
+    transition: all 300ms ease-out;
+  }
+
+  .transition-quick {
+    transition: all 200ms ease-out;
+  }
+
+  .transition-contemplative {
+    transition: all 400ms ease-out;
+  }
+}

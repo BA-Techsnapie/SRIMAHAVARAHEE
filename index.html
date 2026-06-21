@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Divine - Sacred Journey Begins</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a56, #ff6b35);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .redirect-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .temple-icon {
+            font-size: 4rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        .app-title {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .loading-text {
+            font-size: 1.1rem;
+            color: #ff6b35;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #ff6b35;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff9a56, #ff6b35);
+            width: 0%;
+            animation: fillProgress 3s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes fillProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        
+        .blessing-text {
+            font-size: 0.9rem;
+            color: #888;
+            font-style: italic;
+            margin-top: 15px;
+        }
+    </style>
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Ftemplediv2291back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body>
+    <div class="redirect-container">
+        <div class="temple-icon">🕉️</div>
+        <h1 class="app-title">Temple Divine</h1>
+        <p class="subtitle">Welcome to Your Sacred Journey</p>
+        <div class="loading-text">Preparing your divine experience...</div>
+        <div class="loading-spinner"></div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p class="blessing-text">May your path be blessed with peace and enlightenment</p>
+    </div>
+
+    <script>
+        // Redirect to the divine homepage after 3 seconds
+        setTimeout(function() {
+            window.location.href = 'pages/divine_homepage.html';
+        }, 3000);
+        
+        // Optional: Add some interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.redirect-container');
+            
+            // Add a subtle hover effect
+            container.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            container.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+</body>
+</html>
