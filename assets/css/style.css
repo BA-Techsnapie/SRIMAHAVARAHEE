@@ -31,11 +31,11 @@ body {
   --e-global-color-text: #6b6b6b;
   --e-global-color-accent: #413625;
   --e-global-color-white: #ffffff;
-  --e-global-color-soft-orange: #f96f11;
-  --e-global-color-desaturated-magenta: #ec9454;
-  --e-global-color-very-dark-desaturated-magenta: #f96f11;
-  --e-global-color-mostly-desaturated-magenta: #f96f11;
-  --e-global-color-pale-blue: #ec9454;
+  --e-global-color-soft-orange: #8B0000;
+  --e-global-color-desaturated-magenta: #D4AF37;
+  --e-global-color-very-dark-desaturated-magenta: #8B0000;
+  --e-global-color-mostly-desaturated-magenta: #8B0000;
+  --e-global-color-pale-blue: #D4AF37;
 }
 html {
   scroll-behavior: smooth;

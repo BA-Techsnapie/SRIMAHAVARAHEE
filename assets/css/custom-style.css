@@ -11,10 +11,10 @@ body {
     --e-global-color-accent: #413625;
 	--e-global-color-white: #ffffff;
     --e-global-color-soft-orange: #ffe2ad;
-    --e-global-color-desaturated-magenta: #ec9454;
+    --e-global-color-desaturated-magenta: #D4AF37;
     --e-global-color-very-dark-desaturated-magenta: #ffe2ad;
     --e-global-color-mostly-desaturated-magenta: #ffe2ad;
-    --e-global-color-pale-blue: #ec9454;
+    --e-global-color-pale-blue: #D4AF37;
 }
 a {
 	outline:none;
