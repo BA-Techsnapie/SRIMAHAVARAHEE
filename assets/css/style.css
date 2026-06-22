@@ -2429,7 +2429,7 @@ textarea {
       max-width: 700px;
       margin: 40px auto;
       padding: 20px;
-      border: 1px solid #f35105;
+      border: 1px solid #8B0000;
       border-radius: 12px;
       background: #fff;
       text-align: left;
@@ -2439,7 +2439,7 @@ textarea {
 
     .donation-heading {
       display: inline-block;
-      background: #f35105;
+      background: #8B0000;
       color: #fff;
       padding: 8px 20px;
       border-radius: 6px;
@@ -2450,7 +2450,7 @@ textarea {
 
     .donation-details {
       margin-top: 10px;
-      color: #f35105;
+      color: #8B0000;
       font-size: 16px;
       line-height: 1.8;
     }
@@ -2475,12 +2475,12 @@ textarea {
     .copy-icon {
       cursor: pointer;
       margin-left: 5px;
-      color: #f35105;
+      color: #8B0000;
       font-size: 14px;
     }
 
     .copy-icon:hover {
-      color: #f35105;
+      color: #8B0000;
     }
    body {
       margin: 0;
@@ -2489,7 +2489,7 @@ textarea {
     }
 
     .footer {
-      background-color: #f35105;
+      background-color: #8B0000;
       color: #fff;
       padding: 20px 0;
       display: flex;
@@ -2598,7 +2598,7 @@ textarea {
   }
 
   .styled-btn:hover {
-    background-color: #f35105;   /* Hover color */
+    background-color: #8B0000;   /* Hover color */
   }
   .whatsapp-float {
   position: fixed;
@@ -2688,3 +2688,100 @@ textarea {
     stroke: rgba(0,0,0,.45);  /* subtle outline */
     stroke-width: 3px;
   }
+
+  .navaratri-section{
+    padding:100px 0;
+    background:#fffdf8;
+}
+
+.sub-heading{
+    color:#b8860b;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.section-title h2{
+    font-size:54px;
+    font-weight:700;
+    margin:20px 0;
+    color:#2d1f1f;
+}
+
+.section-title p{
+    max-width:800px;
+    margin:auto;
+    color:#666;
+}
+
+.festival-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.festival-card:hover{
+    transform:translateY(-5px);
+}
+
+.festival-card .number{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#8b0000;
+    color:#fff;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.festival-card h4{
+    margin-bottom:5px;
+    font-size:28px;
+}
+
+.festival-card h6{
+    color:#8b0000;
+    margin-bottom:15px;
+}
+
+.festival-image img{
+    width:100%;
+    border-radius:25px;
+    object-fit:cover;
+}
+
+.festival-highlights{
+    margin-top:50px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.highlight-box{
+    text-align:center;
+    padding:25px 40px;
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.highlight-box h5{
+    color:#8b0000;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.specialties_image1 img{
+    width:100%;
+    height:300px;
+    border-radius:20px;
+    object-fit:cover;
+    align-items: center;
+    justify-content: center;
+}
